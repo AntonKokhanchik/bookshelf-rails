@@ -1,2 +1,12 @@
-h1 Books
-p text
+h1.red Book Shelf
+br
+h2 Books
+ul
+  - @books_top.each do |book|
+    li = book.title
+    
+h2 Author
+ul
+  - @authors_top.each do |author|
+    li = author.name
+  
