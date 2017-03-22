@@ -1,0 +1,6 @@
+h2 Книги
+ul
+  - @books.each do |book|
+    li
+      | #{book.title}, автор: #{book.author.name}
+    a.btn.btn-xs.btn-danger.btn-destroy href=book_path(book) data-method="delete" Удалить книгу

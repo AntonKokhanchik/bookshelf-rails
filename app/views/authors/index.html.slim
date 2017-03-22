@@ -1,0 +1,6 @@
+h2 Авторы
+ul
+  - @authors.each do |author|
+    li
+      | #{author.name}, книг в коллекции: #{author.books.count}
+    a.btn.btn-xs.btn-danger.btn-destroy href=author_path(author) data-method="delete" Удалить автора
