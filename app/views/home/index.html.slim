@@ -1,9 +1,11 @@
 h2 Лучшие книги
 ul
   - @books_top.each do |book|
-    li = book.title
+    li
+      = link_to book.title, book_path(book)
     
 h2 Лучшие авторы
 ul
   - @authors_top.each do |author|
-    li = author.name
+    li
+      = link_to author.name, author_path(author)
