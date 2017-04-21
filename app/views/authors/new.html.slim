@@ -1,0 +1,10 @@
+h2 Создать автора
+
+= form_for :author, url: authors_path do |f|
+  p
+    = f.label "Имя автора"
+    br
+    = f.text_field :name
+  
+  p
+    = f.submit

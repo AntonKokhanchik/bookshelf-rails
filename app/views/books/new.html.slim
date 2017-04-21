@@ -1,0 +1,20 @@
+h2 Создать книгу
+
+= form_for :book, url: books_path do |f|
+  p
+    = f.label "Название"
+    br
+    = f.text_field :title
+ 
+  p
+    = f.label "Год"
+    br
+    = f.text_field :year
+    
+  p
+    = f.label "Автор"
+    br
+    = f.collection_select(:author_id, @authors, :id, :name)
+ 
+  p
+    = f.submit

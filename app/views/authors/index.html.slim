@@ -1,8 +1,12 @@
 h2 Авторы
+
+= link_to "Создать автора", new_author_path, class: "btn btn-primary", style: "float: right;"
+
 ul
   - @authors.each do |author|
     li
       = link_to author.name, author_path(author)
       br
       | книг в коллекции: #{author.books.count}
-    a.btn.btn-xs.btn-danger.btn-destroy href=author_path(author) data-method="delete" Удалить автора
+    a.btn.btn-xs.btn-warning.btn-margins href=edit_author_path(author) Редактировать автора
+    a.btn.btn-xs.btn-danger.btn-margins href=author_path(author) data-method="delete" Удалить автора

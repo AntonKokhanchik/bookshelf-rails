@@ -1,8 +1,12 @@
 h2 Книги
+
+= link_to "Создать книгу", new_book_path, class: "btn btn-primary", style: "float: right;"
+
 ul
   - @books.each do |book|
     li
       = link_to book.title, book_path(book)
       br
       | автор: #{book.author.name}
-    a.btn.btn-xs.btn-danger.btn-destroy href=book_path(book) data-method="delete" Удалить книгу
+    a.btn.btn-xs.btn-warning.btn-margins href=edit_book_path(book) Редактировать книгу
+    a.btn.btn-xs.btn-danger.btn-margins href=book_path(book) data-method="delete" Удалить книгу
