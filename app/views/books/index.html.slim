@@ -5,6 +5,9 @@ h2 Книги
 ul
   - @books.each do |book|
     li
+      - if book.cover.length > 0
+        = image_tag book.cover.url(:small)
+        br
       = link_to book.title, book_path(book)
       br
       | автор: #{book.author.name}

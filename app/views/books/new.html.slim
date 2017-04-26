@@ -1,6 +1,14 @@
 h2 Создать книгу
 
 = form_for :book, url: books_path do |f|
+
+  p
+    = f.label "Обложка"
+    br
+    = f.file_field :cover
+
+  = f.hidden_field :cover_cache, as: :hidden
+  
   p
     = f.label "Название"
     br

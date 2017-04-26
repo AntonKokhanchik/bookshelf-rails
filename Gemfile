@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.5'
 # Custom gems
 gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 
 # gem 'capistrano-rails', group: :development
 

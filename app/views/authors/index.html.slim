@@ -5,6 +5,9 @@ h2 Авторы
 ul
   - @authors.each do |author|
     li
+      - if author.photo.length > 0
+        = image_tag author.photo.url(:square)
+        br
       = link_to author.name, author_path(author)
       br
       | книг в коллекции: #{author.books.count}
