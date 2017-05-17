@@ -13,3 +13,5 @@ ul
       | автор: #{book.author.name}
     a.btn.btn-xs.btn-warning.btn-margins href=edit_book_path(book) Редактировать книгу
     a.btn.btn-xs.btn-danger.btn-margins href=book_path(book) data-method="delete" Удалить книгу
+    
+= will_paginate @books

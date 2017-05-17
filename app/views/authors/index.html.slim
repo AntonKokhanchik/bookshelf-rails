@@ -13,3 +13,5 @@ ul
       | книг в коллекции: #{author.books.count}
     a.btn.btn-xs.btn-warning.btn-margins href=edit_author_path(author) Редактировать автора
     a.btn.btn-xs.btn-danger.btn-margins href=author_path(author) data-method="delete" Удалить автора
+
+= will_paginate @authors
