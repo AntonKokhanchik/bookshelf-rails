@@ -1,0 +1,14 @@
+p
+  = f.label "Фото автора"
+  br
+  = f.file_field :photo
+
+= f.hidden_field :photo_cache, as: :hidden
+
+p
+  = f.label "Имя автора"
+  br
+  = f.text_field :name
+
+p
+  = f.submit
