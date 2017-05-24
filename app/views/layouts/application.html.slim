@@ -13,7 +13,7 @@ html
       .container
         .navbar-header
           button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
-            span.sr-only Развернуть меню
+            span.sr-only = t('layout.expand_menu')
             span.icon-bar
             span.icon-bar
             span.icon-bar
@@ -21,9 +21,16 @@ html
         #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
             li class=("active" if controller_name == "books")
-              a href=books_path Книги
+              a href=books_path = t('book.books')
             li class=("active" if controller_name == "authors")
-              a href=authors_path Авторы
+              a href=authors_path = t('author.authors')
+              
+          / a.btn.btn-default.navbar-btn.navbar-right href=(I18n.locale == "ru" ? "/en" : "/ru") = t('layout.switch_locale')
+          
+          a.btn.btn-default.navbar-btn.navbar-right href="/en"
+            | EN
+          a.btn.btn-default.navbar-btn.navbar-right href="/ru"
+            | RU
 
     .container
       =yield

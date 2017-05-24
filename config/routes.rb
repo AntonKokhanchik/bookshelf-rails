@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :authors
-  resources :books
-  root to: 'home#index'
-  
+  scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
+
+    root to: 'home#index'
+    resources :authors
+    resources :books
+
+  end
+
 end

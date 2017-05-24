@@ -1,6 +1,6 @@
-h2 Книги
+h2 = t('book.books')
 
-= link_to "Создать книгу", new_book_path, class: "btn btn-primary", style: "float: right;"
+= link_to t('book.add_book'), new_book_path, class: "btn btn-primary", style: "float: right;"
 
 ul
   - @books.each do |book|
@@ -10,8 +10,8 @@ ul
         br
       = link_to book.title, book_path(book)
       br
-      | автор: #{book.author.name}
-    a.btn.btn-xs.btn-warning.btn-margins href=edit_book_path(book) Редактировать книгу
-    a.btn.btn-xs.btn-danger.btn-margins href=book_path(book) data-method="delete" Удалить книгу
+      | #{t('author.author')}: #{book.author.name}
+    a.btn.btn-xs.btn-warning.btn-margins href=edit_book_path(book) = t('book.edit_book')
+    a.btn.btn-xs.btn-danger.btn-margins href=book_path(book) data-method="delete" = t('book.remove_book')
     
 = will_paginate @books

@@ -1,0 +1,24 @@
+---
+ru:
+  author:
+    add_author: Добавить автора
+    author: Автор
+    authors: Авторы
+    edit_author: Редактировать автора
+    remove_author: Удалить автора
+  book:
+    add_book: Добавить книгу
+    books: Книги
+    books_in_collection: Книг в коллекции
+    edit_book: Редактировать книгу
+    remove_book: Удалить книгу
+  home:
+    top_authors: Лучшие авторы
+    top_books: Лучшие книги
+  layout:
+    expand_menu: Развернуть меню
+    switch_locale: In English
+  will_paginate:
+    next_label: "&#8594;"
+    page_gap: "&hellip;"
+    previous_label: "&#8592;"

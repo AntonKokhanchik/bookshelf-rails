@@ -1,0 +1,22 @@
+base_locale: ru
+locales: [ru, en]
+internal_locale: en
+
+data:
+  adapter: I18n::Tasks::Data::FileSystem
+
+  read:
+    - config/locales/%{locale}.yml
+
+  write:
+    - config/locales/%{locale}.yml
+
+  yaml:
+    write:
+      line_width: -1
+
+search:
+  exclude:
+    - app/assets/images
+    - app/assets/fonts
+    - app/assets/videos

@@ -1,6 +1,6 @@
-h2 Авторы
+h2 = t('author.authors')
 
-= link_to "Создать автора", new_author_path, class: "btn btn-primary", style: "float: right;"
+= link_to t('author.add_author'), new_author_path, class: "btn btn-primary", style: "float: right;"
 
 ul
   - @authors.each do |author|
@@ -10,8 +10,8 @@ ul
         br
       = link_to author.name, author_path(author)
       br
-      | книг в коллекции: #{author.books.count}
-    a.btn.btn-xs.btn-warning.btn-margins href=edit_author_path(author) Редактировать автора
-    a.btn.btn-xs.btn-danger.btn-margins href=author_path(author) data-method="delete" Удалить автора
+      | #{t('book.books_in_collection')}: #{author.books.count}
+    a.btn.btn-xs.btn-warning.btn-margins href=edit_author_path(author) = t('author.edit_author')
+    a.btn.btn-xs.btn-danger.btn-margins href=author_path(author) data-method="delete" = t('author.remove_author')
 
 = will_paginate @authors

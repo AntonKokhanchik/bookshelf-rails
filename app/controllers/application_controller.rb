@@ -1,7 +1,15 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :http_authenticate
+  before_action :http_authenticate, :set_locale
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+  def default_url_options(options = {})
+    { locale: (I18n.locale unless I18n.locale == :ru) }.merge options
+  end
 
   private
 

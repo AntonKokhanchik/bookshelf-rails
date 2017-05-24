@@ -1,26 +1,24 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 en:
+  author:
+    add_author: Add author
+    author: Author
+    authors: Authors
+    edit_author: Edit author
+    remove_author: Remove author
+  book:
+    add_book: Add book
+    books: Books
+    books_in_collection: Books in collection
+    edit_book: Edit book
+    remove_book: Remove book
+  home:
+    top_authors: Top authors
+    top_books: Top books
+  layout:
+    expand_menu: Expand menu
+    switch_locale: На русский
   will_paginate:
-    previous_label: "&#8592; Предыдущий"
-    next_label: "Следующий &#8594;"
+    next_label: "&#8594;"
     page_gap: "&hellip;"
+    previous_label: "&#8592;"

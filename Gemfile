@@ -7,6 +7,8 @@ end
 
 # Default gems
 gem 'rails', '~> 5.0.2'
+gem 'rails-i18n', '~> 5.0.2'
+gem 'i18n-tasks', '~> 0.9.15'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'

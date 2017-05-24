@@ -1,10 +1,14 @@
-h2 Лучшие книги
+= I18n.locale
+
+h2
+  = t('home.top_books')
 ul
   - @books_top.each do |book|
     li
       = link_to book.title, book_path(book)
     
-h2 Лучшие авторы
+h2
+  = t('home.top_authors')
 ul
   - @authors_top.each do |author|
     li
