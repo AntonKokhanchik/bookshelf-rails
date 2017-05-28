@@ -3,6 +3,9 @@ ru:
   author:
     add_author: Добавить автора
     author: Автор
+    author_books: Книги автора
+    author_name: Имя автора
+    author_photo: Фото автора
     authors: Авторы
     edit_author: Редактировать автора
     remove_author: Удалить автора

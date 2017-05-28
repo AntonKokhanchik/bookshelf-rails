@@ -4,7 +4,7 @@ h2
 - if @author.photo.length > 0
   = image_tag @author.photo.url(:square)
 
-h3 Книги автора:
+h3 =t('author.author_books')+":"
 ul
   - @author.books.each do |book|
     li

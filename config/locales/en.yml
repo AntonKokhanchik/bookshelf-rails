@@ -3,6 +3,9 @@ en:
   author:
     add_author: Add author
     author: Author
+    author_books: Author books
+    author_name: Author name
+    author_photo: Author photo
     authors: Authors
     edit_author: Edit author
     remove_author: Remove author
