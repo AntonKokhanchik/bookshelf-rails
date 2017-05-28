@@ -4,6 +4,6 @@ h2
 - if @book.cover.length > 0
   = image_tag @book.cover.url(:big)
 p
-  | автор: #{ link_to @book.author.name, author_path(@book.author)}
+  | #{t('author.author')}: #{ link_to @book.author.name, author_path(@book.author)}
 p 
-  | год: #{@book.year}
+  | #{t('book.year')}: #{@book.year}

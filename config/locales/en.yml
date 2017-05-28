@@ -13,8 +13,11 @@ en:
     add_book: Add book
     books: Books
     books_in_collection: Books in collection
+    cover: Cover
     edit_book: Edit book
     remove_book: Remove book
+    title: Title
+    year: Year
   home:
     top_authors: Top authors
     top_books: Top books

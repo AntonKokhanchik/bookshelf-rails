@@ -1,4 +1,4 @@
-h2 Редактировать книгу: #{@book.title}
+h2 =t('book.edit_book')+": #{@book.title}"
 
 - if @book.cover.length > 0
   = image_tag @book.cover.url(:small)

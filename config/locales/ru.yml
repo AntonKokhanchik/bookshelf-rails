@@ -13,8 +13,11 @@ ru:
     add_book: Добавить книгу
     books: Книги
     books_in_collection: Книг в коллекции
+    cover: Обложка
     edit_book: Редактировать книгу
     remove_book: Удалить книгу
+    title: Название
+    year: Год
   home:
     top_authors: Лучшие авторы
     top_books: Лучшие книги
