@@ -1,12 +1,12 @@
 p
-  = f.label "Фото автора"
+  = f.label t('author.author_photo')
   br
   = f.file_field :photo
 
 = f.hidden_field :photo_cache, as: :hidden
 
 p
-  = f.label "Имя автора"
+  = f.label t('author.author_name')
   br
   = f.text_field :name
 

@@ -1,22 +1,22 @@
 p
-  = f.label "Обложка"
+  = f.label t('book.cover')
   br
   = f.file_field :cover
 
 = f.hidden_field :cover_cache, as: :hidden
 
 p
-  = f.label "Название"
+  = f.label t('book.title')
   br
   = f.text_field :title
 
 p
-  = f.label "Год"
+  = f.label t('book.year')
   br
   = f.text_field :year
   
 p
-  = f.label "Автор"
+  = f.label t('author.author')
   br
   = f.collection_select(:author_id, @authors, :id, :name)
 

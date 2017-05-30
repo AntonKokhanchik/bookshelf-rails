@@ -25,12 +25,7 @@ html
             li class=("active" if controller_name == "authors")
               a href=authors_path = t('author.authors')
               
-          / a.btn.btn-default.navbar-btn.navbar-right href=(I18n.locale == "ru" ? "/en" : "/ru") = t('layout.switch_locale')
-          
-          a.btn.btn-default.navbar-btn.navbar-right href="/en"
-            | EN
-          a.btn.btn-default.navbar-btn.navbar-right href="/ru"
-            | RU
+          a.btn.btn-default.navbar-btn.navbar-right href=(I18n.locale == :ru ? "/en" : "/ru") = t('layout.switch_locale')
 
     .container
       =yield
