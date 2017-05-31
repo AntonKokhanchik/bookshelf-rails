@@ -9,6 +9,7 @@ en:
     authors: Authors
     edit_author: Edit author
     remove_author: Remove author
+    save_author: Save author
   book:
     add_book: Add book
     books: Books
@@ -16,6 +17,7 @@ en:
     cover: Cover
     edit_book: Edit book
     remove_book: Remove book
+    save_book: Save book
     title: Title
     year: Year
   home:
