@@ -9,6 +9,7 @@ ru:
     authors: Авторы
     edit_author: Редактировать автора
     remove_author: Удалить автора
+    save_author: Сохранить автора
   book:
     add_book: Добавить книгу
     books: Книги
@@ -16,6 +17,7 @@ ru:
     cover: Обложка
     edit_book: Редактировать книгу
     remove_book: Удалить книгу
+    save_book: Сохранить книгу
     title: Название
     year: Год
   home:
